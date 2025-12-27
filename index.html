@@ -417,18 +417,10 @@
 <body>
     <!-- Galaxy Background -->
     <div class="stars" id="stars"></div>
-    <div class="planet" style="top: 15%; right: 10%;">🌙</div>
-    
-    <!-- Floating Emojis -->
-    <div class="emoji-float" style="top: 25%; left: 15%; animation-delay: -2s;">💻</div>
-    <div class="emoji-float" style="top: 65%; left: 85%; animation-delay: -5s;">🚀</div>
-    <div class="emoji-float" style="top: 80%; left: 25%; animation-delay: -8s;">⭐</div>
-    <div class="emoji-float" style="top: 45%; left: 75%; animation-delay: -3s;">✨</div>
+    <div class="jupiter"></div>
+    <div class="smoking-man"></div>
     
     <div id="particles-js"></div>
-    
-    <!-- Rabbit Element -->
-    <div id="rabbit">🐰</div>
     
     <div class="content-wrapper">
     <header>
@@ -460,43 +452,43 @@
             <div class="tech-stack">
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"></path>
+                        <path fill="#999999" d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"></path>
                     </svg>
                     <span>HTML5</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm84.134 108.188l-30.155 8.359-30.093-8.359-8.156-91.447h76.399l-8.095 91.447zM64.021 67.062l-18.636-.049-1.204-13.504h19.84l-.001-13.548H33.004l.34 3.517 3.477 38.984h27.2v-13.551l-.013.001-13.457-.326-.916-10.265h14.386l-.001-13.549zm17.965 13.549h-13.954l-1.258 14.112-13.775 3.715.013.026v14.124l25.276-7.003.186-2.087 2.909-32.587.302-3.3h-27.859v13.549h13.955l-.796 8.951z"></path>
+                        <path fill="#999999" d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm84.134 108.188l-30.155 8.359-30.093-8.359-8.156-91.447h76.399l-8.095 91.447zM64.021 67.062l-18.636-.049-1.204-13.504h19.84l-.001-13.548H33.004l.34 3.517 3.477 38.984h27.2v-13.551l-.013.001-13.457-.326-.916-10.265h14.386l-.001-13.549zm17.965 13.549h-13.954l-1.258 14.112-13.775 3.715.013.026v14.124l25.276-7.003.186-2.087 2.909-32.587.302-3.3h-27.859v13.549h13.955l-.796 8.951z"></path>
                     </svg>
                     <span>CSS3</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-10.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
+                        <path fill="#999999" d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-10.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
                     </svg>
                     <span>JavaScript</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"></path>
+                        <path fill="#999999" d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"></path>
                     </svg>
                     <span>Python</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M64 33.039c-33.74 0-61.094 13.862-61.094 30.961s27.354 30.961 61.094 30.961 61.094-13.862 61.094-30.961-27.354-30.961-61.094-30.961zm-15.897 36.993c-1.458 1.364-3.077 1.927-4.86 2.507-1.783.581-4.052.461-6.811.461h-6.253l-1.733 10h-7.301l6.515-34h14.04c4.224 0 7.305 1.215 9.242 3.432 1.937 2.217 2.519 5.364 1.747 9.337-.319 1.637-.856 3.159-1.614 4.515-.759 1.357-1.75 2.624-2.972 3.748zm21.311 2.968l2.881-14.42c.328-1.688.208-2.942-.361-3.555-.57-.614-1.782-1.025-3.635-1.025h-5.79l-3.731 19h-7.244l6.515-33h7.244l-1.732 9h6.453c4.061 0 6.861.815 8.402 2.231s2.003 3.356 1.387 6.528l-3.031 15.241h-7.358zm40.259-11.178c-.318 1.637-.856 3.133-1.613 4.488-.758 1.357-1.748 2.598-2.971 3.722-1.458 1.364-3.078 1.927-4.86 2.507-1.782.581-4.053.461-6.812.461h-6.253l-1.732 10h-7.301l6.514-34h14.041c4.224 0 7.305 1.215 9.241 3.432 1.935 2.217 2.518 5.418 1.746 9.39zM95.919 54h-5.001l-2.727 14h4.442c2.942 0 5.136-.29 6.576-1.4 1.442-1.108 2.413-2.828 2.918-5.421.484-2.491.264-4.434-.66-5.458-.925-1.024-2.774-1.721-5.548-1.721zm-56.985 0h-5.002l-2.727 14h4.441c2.943 0 5.136-.29 6.577-1.4 1.441-1.108 2.413-2.828 2.917-5.421.484-2.491.264-4.434-.66-5.458S41.708 54 38.934 54z"></path>
+                        <path fill="#999999" d="M64 33.039c-33.74 0-61.094 13.862-61.094 30.961s27.354 30.961 61.094 30.961 61.094-13.862 61.094-30.961-27.354-30.961-61.094-30.961zm-15.897 36.993c-1.458 1.364-3.077 1.927-4.86 2.507-1.783.581-4.052.461-6.811.461h-6.253l-1.733 10h-7.301l6.515-34h14.04c4.224 0 7.305 1.215 9.242 3.432 1.937 2.217 2.519 5.364 1.747 9.337-.319 1.637-.856 3.159-1.614 4.515-.759 1.357-1.75 2.624-2.972 3.748zm21.311 2.968l2.881-14.42c.328-1.688.208-2.942-.361-3.555-.57-.614-1.782-1.025-3.635-1.025h-5.79l-3.731 19h-7.244l6.515-33h7.244l-1.732 9h6.453c4.061 0 6.861.815 8.402 2.231s2.003 3.356 1.387 6.528l-3.031 15.241h-7.358zm40.259-11.178c-.318 1.637-.856 3.133-1.613 4.488-.758 1.357-1.748 2.598-2.971 3.722-1.458 1.364-3.078 1.927-4.86 2.507-1.782.581-4.053.461-6.812.461h-6.253l-1.732 10h-7.301l6.514-34h14.041c4.224 0 7.305 1.215 9.241 3.432 1.935 2.217 2.518 5.418 1.746 9.39zM95.919 54h-5.001l-2.727 14h4.442c2.942 0 5.136-.29 6.576-1.4 1.442-1.108 2.413-2.828 2.918-5.421.484-2.491.264-4.434-.66-5.458-.925-1.024-2.774-1.721-5.548-1.721zm-56.985 0h-5.002l-2.727 14h4.441c2.943 0 5.136-.29 6.577-1.4 1.441-1.108 2.413-2.828 2.917-5.421.484-2.491.264-4.434-.66-5.458S41.708 54 38.934 54z"></path>
                     </svg>
                     <span>PHP</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <path fill="#e2e8f0" d="M124.742 58.378L69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00.004-11.501z"></path>
+                        <path fill="#999999" d="M124.742 58.378L69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00.004-11.501z"></path>
                     </svg>
                     <span>Git</span>
                 </div>
                 <div class="tech-icon">
                     <svg width="50" height="50" viewBox="0 0 128 128">
-                        <g fill="#e2e8f0"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
+                        <g fill="#999999"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
                     </svg>
                     <span>GitHub</span>
                 </div>
@@ -507,7 +499,7 @@
             <h2>Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>🌐 Frontend Development</h3>
+                    <h3>Frontend Development</h3>
                     <ul class="skill-list">
                         <li>HTML5 & CSS3</li>
                         <li>JavaScript (ES6+)</li>
@@ -516,7 +508,7 @@
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>⚙️ Backend Development</h3>
+                    <h3>Backend Development</h3>
                     <ul class="skill-list">
                         <li>Python</li>
                         <li>PHP</li>
@@ -525,16 +517,16 @@
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>🔒 Security</h3>
+                    <h3>Security Analysis</h3>
                     <ul class="skill-list">
-                        <li>Security Analysis</li>
                         <li>Vulnerability Assessment</li>
                         <li>Network Security</li>
-                        <li>OS Concepts (ETA)</li>
+                        <li>Penetration Testing</li>
+                        <li>OWASP Standards</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>🛠️ Tools & Platforms</h3>
+                    <h3>Development Tools</h3>
                     <ul class="skill-list">
                         <li>Git & GitHub</li>
                         <li>Visual Studio Code</li>
@@ -549,42 +541,41 @@
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Python Learning Projects</h3>
-                    <p>A comprehensive collection of Python applications demonstrating core programming concepts including object-oriented programming (OOP), data structures, algorithms, and design patterns. Projects showcase the implementation of fundamental computer science theories such as recursion, dynamic programming, and complexity analysis through practical problem-solving approaches.</p>
+                    <h3>Python Development</h3>
+                    <p>Advanced Python applications implementing OOP principles, algorithms, and data structures.</p>
                     <span class="project-lang">Python</span>
                     <span class="project-lang">Algorithms</span>
-                    <span class="project-lang">⭐ 1</span>
                 </div>
                 <div class="project-card">
-                    <h3>HTML Learning Hub</h3>
-                    <p>An extensive repository of HTML5 examples covering semantic markup, accessibility principles (WCAG), and modern web standards. Demonstrates the Document Object Model (DOM) structure, client-side rendering concepts, and best practices for creating well-structured, SEO-optimized web content that follows W3C specifications.</p>
+                    <h3>Web Development</h3>
+                    <p>Semantic HTML5 markup following W3C standards and accessibility guidelines.</p>
                     <span class="project-lang">HTML5</span>
-                    <span class="project-lang">Accessibility</span>
-                    <span class="project-lang">⭐ 1</span>
+                    <span class="project-lang">CSS3</span>
                 </div>
                 <div class="project-card">
-                    <h3>BloodHacking Lab</h3>
-                    <p>A cybersecurity research project exploring penetration testing methodologies, vulnerability assessment frameworks (OWASP), and ethical hacking principles. Implements various security concepts including authentication mechanisms, encryption algorithms, SQL injection prevention, and secure coding practices following industry standards.</p>
+                    <h3>Security Research</h3>
+                    <p>Penetration testing framework implementing OWASP methodologies and ethical hacking practices.</p>
                     <span class="project-lang">Security</span>
-                    <span class="project-lang">Ethical Hacking</span>
-                    <span class="project-lang">CSS</span>
+                    <span class="project-lang">Testing</span>
                 </div>
                 <div class="project-card">
-                    <h3>JavaScript Interactive Applications</h3>
-                    <p>Modern JavaScript applications demonstrating asynchronous programming (Promises, async/await), event-driven architecture, functional programming paradigms, and ES6+ features. Projects implement RESTful API integration, state management patterns, and interactive user interfaces using vanilla JavaScript and DOM manipulation techniques.</p>
+                    <h3>JavaScript Applications</h3>
+                    <p>Modern ES6+ applications with asynchronous programming and RESTful API integration.</p>
                     <span class="project-lang">JavaScript</span>
-                    <span class="project-lang">ES6+</span>
                     <span class="project-lang">APIs</span>
                 </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Connect With Me</h2>
-            <div class="contact-links">
-                <a href="https://github.com/Escaped0127" class="contact-btn" target="_blank">GitHub</a>
-                <a href="https://www.instagram.com/arnavtiwari077/" class="contact-btn" target="_blank">Instagram</a>
-                <a href="mailto:arnav.15@outlook.com" class="contact-btn">Email</a>
+                <div class="project-card">
+                    <h3>Full Stack Projects</h3>
+                    <p>End-to-end web applications combining frontend, backend, and database technologies.</p>
+                    <span class="project-lang">Full Stack</span>
+                    <span class="project-lang">PHP</span>
+                </div>
+                <div class="project-card">
+                    <h3>System Architecture</h3>
+                    <p>Scalable application design with distributed systems and microservices architecture.</p>
+                    <span class="project-lang">Architecture</span>
+                    <span class="project-lang">Design</span>
+                </div>
             </div>
         </section>
     </div>
@@ -599,68 +590,32 @@
         // Create stars for galaxy background
         const starsContainer = document.getElementById('stars');
         const starSizes = ['small', 'medium', 'large'];
-        const starDistribution = [150, 40, 10]; // More small stars, fewer large ones
+        const starDistribution = [180, 50, 15]; // More small stars, fewer large ones
         
-        let starCount = 0;
         starSizes.forEach((size, index) => {
             for (let i = 0; i < starDistribution[index]; i++) {
                 const star = document.createElement('div');
                 star.className = `star ${size}`;
                 star.style.left = Math.random() * 100 + '%';
                 star.style.top = Math.random() * 100 + '%';
-                star.style.animationDelay = Math.random() * 3 + 's';
-                star.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                star.style.animationDelay = Math.random() * 4 + 's';
+                star.style.animationDuration = (Math.random() * 3 + 3) + 's';
                 starsContainer.appendChild(star);
             }
         });
-
-        // Rabbit following cursor
-        const rabbit = document.getElementById('rabbit');
-        let rabbitX = window.innerWidth / 2;
-        let rabbitY = window.innerHeight / 2;
-        let mouseX = rabbitX;
-        let mouseY = rabbitY;
-
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        function animateRabbit() {
-            const dx = mouseX - rabbitX;
-            const dy = mouseY - rabbitY;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-            
-            if (distance > 5) {
-                const speed = 0.05;
-                rabbitX += dx * speed;
-                rabbitY += dy * speed;
-                
-                // Calculate rotation angle
-                const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-                
-                rabbit.style.left = rabbitX + 'px';
-                rabbit.style.top = rabbitY + 'px';
-                rabbit.style.transform = `rotate(${angle}deg)`;
-            }
-            
-            requestAnimationFrame(animateRabbit);
-        }
-
-        animateRabbit();
 
         // Particle.js configuration
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 60,
+                    value: 40,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: ['#ffffff', '#e2e8f0', '#cbd5e0', '#a0aec0']
+                    value: ['#444444', '#555555', '#666666']
                 },
                 shape: {
                     type: 'circle',
@@ -670,42 +625,42 @@
                     }
                 },
                 opacity: {
-                    value: 0.4,
+                    value: 0.3,
                     random: true,
                     anim: {
                         enable: true,
-                        speed: 0.5,
+                        speed: 0.3,
                         opacity_min: 0.1,
                         sync: false
                     }
                 },
                 size: {
-                    value: 2,
+                    value: 1.5,
                     random: true,
                     anim: {
                         enable: true,
-                        speed: 1,
+                        speed: 0.5,
                         size_min: 0.1,
                         sync: false
                     }
                 },
                 line_linked: {
                     enable: true,
-                    distance: 100,
-                    color: '#cbd5e0',
-                    opacity: 0.15,
-                    width: 1
+                    distance: 120,
+                    color: '#333333',
+                    opacity: 0.1,
+                    width: 0.5
                 },
                 move: {
                     enable: true,
-                    speed: 0.8,
+                    speed: 0.5,
                     direction: 'none',
                     random: true,
                     straight: false,
                     out_mode: 'out',
                     bounce: false,
                     attract: {
-                        enable: true,
+                        enable: false,
                         rotateX: 600,
                         rotateY: 1200
                     }
@@ -719,20 +674,16 @@
                         mode: 'grab'
                     },
                     onclick: {
-                        enable: true,
-                        mode: 'push'
+                        enable: false
                     },
                     resize: true
                 },
                 modes: {
                     grab: {
-                        distance: 120,
+                        distance: 100,
                         line_linked: {
-                            opacity: 0.3
+                            opacity: 0.2
                         }
-                    },
-                    push: {
-                        particles_nb: 3
                     }
                 }
             },
